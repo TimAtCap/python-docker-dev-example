@@ -33,7 +33,7 @@ app = FastAPI(lifespan=lifespan)
 @app.get("/")
 def hello() -> str:
     return "Hello, Docker! This file is being watched!"
-    
+
 @app.get("/about")
 def about() -> str:
     return "This is a simple FastAPI based API to help me learn how to containerize Python applications"
